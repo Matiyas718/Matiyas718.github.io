@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Matiyas Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <img src="profile. jpg" alt="My Photo" class="profile"
+      <h1>Hi I'm Matiyas👋</h1>
+      <p>Web Devloper in Training 💻</p>
+    </header>
+    <section>
+       <h2>About Me</h2>
+       <p>
+          I am learning HTML, CSS and javascript.</p>
+    </section>
+    <section>
+        <h2>My skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>javascript</li>
+        </ul>
+    </section>
+    <section>
+      <h2>My projects</h2>
+      <div class="projects">
+      </div class ="card">
+      <h3>📊 Calculator</h3>
+      <p>A simple calculator built with javascript.</p>
+      <a href="calculator.html">
+      <button>View Project</button>
+      </a>
+      </div>
+      <div class="card">
+        <h3>✅ To-Do App</h3>
+     <p>A simple task management app.</p>
+     <a href="Todo.html">
+     <button>View project</button>
+     </a>
+     </div>
+     </div>
+    </section>
+    <section>
+      <h2>Contact Me📞</h2>
+      <p>If you want to work with me, contact me</p>
+      <a href="https://wa.me/251973032342" target="_blank">
+        <button>📩 WhatsApp Me</button>
+      </a>
+      <a href="mailto:matiyasnigusechernet@gmail.com">
+        <button>📧 Email Me</button>
+      </a>
+    </section>
+  </body>
+  <style>
+     .body {
+         font-family: Arial;
+         margin: 0;
+         text-align: center;
+         background-color: #f2f2f2;
+         color: #222;
+     }
+     .header {
+        background-color: #111;
+        color: white;
+        padding: 40px 20px; 
+     }
+     .section {
+         background-color: white;
+         margin: 20px;
+         padding: 25px;
+         border-radius: 15px;
+     }
+     h1 {
+       font-size: 35px;
+     }
+     h2 {
+       color: blue;
+     }
+     li {
+       list-style: none;
+       margin: 10px;
+       font-size: 18px;
+     }
+     .profile {
+           width: 130px;
+           height: 130px;
+           border-radius: 50%;
+           object-fit: cover;
+           border: 4px solid white;
+     }
+     .projects { 
+       font-display: flex;
+       justify-content: center;
+       gap: 20px;
+       flex-wrap: Wrap;
+       .card {
+           width: 220px;
+           padding: 20px;
+           background-color: #f5f5ft;
+           border-radius: 15px;
+           box-shadow: 0 3px 10px gray;
+       }
+       .card h3 {
+          color: blue;
+       }
+       .card button {
+         background-color: blue;
+         color: white;
+         border: none;
+         padding: 10px;
+         border-radius: 8px;
+       }
+       @media (max-width: 600px) {
+         .todo {
+             width: 85%;
+         }
+         .projects {
+              webkit-flex-direction: column;
+              align-items: center;
+       }
+       .card {
+           width: 80%;
+       }
+       h1 {
+          font-size: 28px;
+       }
+       section {
+             margin: 10px;
+       }
+       }
+  </style>
+</html>
