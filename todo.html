@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My To-Do App</title>
+    <style>
+      body {
+        font-family: Arial;
+        text-align: center;
+        background-color: #f2f2f2;
+        padding-top: 40px;
+}
+     .todo  {
+        background-color: white;
+        width: 300px;
+        margin: auto;
+        border: 24px;
+        border-radius: 15px;
+}
+   <input id="task"placeholder="write atask...">{
+     padding: 12px;
+    width: 60%;
+}
+   < button onclick="addTask()">Add</button>
+   <button onclick="clearAll()"Clear All</button>
+   <ul id="list"></ul>
+   button{ 
+       padding: 10px;
+       background-color: blue;
+       color: white;
+       border: none;
+       border-radius: 8px;
+}
+     li {
+         margin: 10px;
+         text-align: left;
+     }
+    </style>
+</head>
+<body>
+<div class="todo">
+      <h1>My To-Do List ✅</h1>
+      <input id="task" placeholder="Write a task...">
+      <button onclick="addTask()">Add</button>
+      <ul id="list"></ul>
+</div>
+<script>
+  function clearAll() {
+    document.getElementById("list").innerHTML = "";}
+  function addTask() {
+    let task =
+document.getElementById("task").value;
+if (task === "") {
+  alert("please write a task!");
+  return;
+}
+let li = document.createElement("li");
+    li.textContent = task + " ";
+    let deleteButton =
+ document.createElement("button");
+   deleteButton.textContent = "Delete";
+   deleteButton.onclick = function() {  li.remove();
+   }
+   let doneButton =
+document.createElement("button");
+doneButton.textContent = "Done ✅";
+doneButton.onclick = function() {
+    li.style.textDecoration = 
+"line-through";
+};
+li.appendChild(deleteButton);
+li.appendChild(doneButton);
+document.getElementById("list").appendChild(li);
+document.getElementById("list").innerHTML 
+document.getElementById("task").value = "";
+  }
+</script>
+<button onclick="clearAll()">Clear All</button>
+</body>
+</html>
