@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>My calculator</title>
+</head>
+<style> 
+  body { 
+       font-family: Arial;
+       text-align: center;
+       background-color: #f2f2f2;
+       padding-top: 50px;
+    }
+    .calculator {
+        background-color: white;
+        width: 300px;
+        margin: auto;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px gray;
+}
+  input {
+           width: 90%
+           padding: 12px;
+           margin: 8px;
+           font-size: 18px
+}
+  button {
+      padding: 12px;
+      margin: 5px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      bsckground-color: blue;
+      color: white;
+}
+#result  {
+  margin-top: 20px;
+}
+</style>
+  <body>
+    <div class="calculator">
+      <h1>My calculator 📊</h1>
+      <input id="num1" type="number"
+      placeholder="Number 1">
+    <input id="num2" type="number"
+    placeholder="Number 2"
+       <br>
+       <button onclick="plus()">Plus +</button>
+       <button onclick="subtract()">Subtract -</button>
+       <button onclick="multiply()">Multiply ×</button>
+       <button onclick="divide()">Divide ÷</button>
+       <h2 id="result">Result:</h2>
+    </div>
+<script> function plus() { 
+  let a =
+Number(document.getElementById("num1").value);
+  let b = Number(document.getElementById("num2").value); let answer = a + b;
+  document.getElementById("result").innerHTML = "Result: " + answer 
+}
+    function subtract() { let a = Number(document.getElementById("num1").value);
+    let b = Number(document.getElementById("num2").value);
+    document.getElementById("result").innerHTML = "Result:" + (a - b)
+}
+function multiply() { let a = Number(document.getElementById("num1").value);
+let b = Number(document.getElementById("num2").value);
+document.getElementById("result").innerHTML =
+  "Result: " + (a * b);
+}
+function divide()  { let a =
+Number(document.getElementById("num1").value)
+let b = Number(document.getElementById("num2").value);
+document.getElementById("result").innerHTML =      "Result: " + (a / b);  
+}
+
+    </script>
+          </body>
+          </html>
